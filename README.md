@@ -29,6 +29,7 @@ import (
 	"net/netip"
 )
 
+// Example function to show available credits
 func credits(api *zerobounce.API) {
 	response, err := api.GetCredits()
 	if err != nil {
@@ -42,6 +43,7 @@ func credits(api *zerobounce.API) {
 	}
 }
 
+// Example function to validate an email address
 func validate(api *zerobounce.API, email string, ipAddress *netip.Addr) {
 	response, err := api.Validate(email, ipAddress)
 	if err != nil {
