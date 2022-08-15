@@ -19,7 +19,7 @@ const (
 )
 
 var (
-	errUnexpectedHTTPStatusCode = errors.New("expected http status code")
+	errUnexpectedHTTPStatusCode = errors.New("unexpected http status code")
 )
 
 type API struct {
