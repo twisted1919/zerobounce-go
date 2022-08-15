@@ -83,6 +83,7 @@ func main() {
 MIT
 
 ## Test
+Set your api key in the `ZEROBOUNCE_API_KEY` environment variable, then run:  
 ```bash
 $ go test ./...
 ``` 
