@@ -94,7 +94,7 @@ func TestAPI_Validate(t *testing.T) {
 
 	for _, email := range emails {
 		response, err := api.Validate(email.email, nil)
-		
+
 		assert.Nil(t, err)
 		assert.Nil(t, response.Error)
 		assert.Equal(t, response.Success.Status, email.expectedStatus)
